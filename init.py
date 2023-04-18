@@ -20,7 +20,7 @@ class Game():
             self.games += 1
             title = "Wybierz mądrze:"
             playerChoice, index = pick(playerOptions, title,
-                                       indicator='=>', default_index=1)
+                                       indicator='->', default_index=1)
             counter.checkRoundWinner(playerChoice, computer.choice())
 
             if self.games == self.gamesToPlay - 1:
